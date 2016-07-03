@@ -21,5 +21,8 @@
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "sagui": "^6.1.0"
+  },
+  "dependencies": {
+    "moment": "^2.13.0"
   }
 }

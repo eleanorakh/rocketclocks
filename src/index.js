@@ -1,6 +1,7 @@
 import style from './index.css'
 import React from 'react'
 import ReactDom from 'react-dom'
+import moment from 'moment'
 
 const Clock = React.createClass({
   getInitialState () {
@@ -14,7 +15,11 @@ const Clock = React.createClass({
   },
 
   render () {
-    return <p>{this.state.date.toString()}</p>
+    return (
+      <p>
+        {moment().format('MMMM Do YYYY, h:mm:ss a')}
+      </p>
+    )
   }
 })
 

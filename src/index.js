@@ -1,7 +1,8 @@
 import style from './index.css'
+import React from 'react'
+import ReactDom from 'react-dom'
 
-const div = document.createElement('div')
-div.innerHTML = '<h1>Hello World</h1>'
-div.className = style.component
-
-document.getElementById('rocketclocks').appendChild(div)
+ReactDom.render(
+  <div className={style.component}><h1>Hello, world</h1></div>,
+  document.getElementById('rocketclocks')
+)

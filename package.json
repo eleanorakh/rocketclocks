@@ -18,6 +18,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
     "sagui": "^6.1.0"
   }
 }

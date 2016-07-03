@@ -2,9 +2,25 @@ import style from './index.css'
 import React from 'react'
 import ReactDom from 'react-dom'
 
+const Clock = React.createClass({
+  getInitialState () {
+    return {date: new Date()}
+  },
+
+  componentDidMount () {
+    setInterval(function () {
+      this.setState({date: new Date()})
+    }.bind(this), 100)
+  },
+
+  render () {
+    return <p>{this.state.date.toString()}</p>
+  }
+})
+
 const App = React.createClass({
   render () {
-    return <div className={style.component}><h1>Hello, world</h1></div>
+    return <div className={style.component}><Clock /></div>
   }
 })
 

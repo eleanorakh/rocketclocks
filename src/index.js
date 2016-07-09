@@ -25,7 +25,11 @@ const Clock = React.createClass({
 
 const App = React.createClass({
   render () {
-    return <div className={style.component}><Clock /></div>
+    return (
+      <div className={style.component}>
+        <Clock />
+      </div>
+    )
   }
 })
 

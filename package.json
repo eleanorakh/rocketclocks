@@ -19,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "moment-timezone": "^0.5.4",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "sagui": "^6.1.0"

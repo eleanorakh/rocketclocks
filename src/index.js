@@ -1,7 +1,8 @@
 import style from './index.css'
 import React from 'react'
 import ReactDom from 'react-dom'
-import moment from 'moment'
+
+const momentTz = require('moment-timezone')
 
 const Clock = React.createClass({
   getInitialState () {

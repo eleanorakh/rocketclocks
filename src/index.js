@@ -19,7 +19,7 @@ const Clock = React.createClass({
     const time = momentTz().tz(this.props.timezone).format('MMMM Do YYYY, h:mm:ss a')
     return (
       <p>
-        {time}
+        {time} <span>{this.props.label}</span>
       </p>
     )
   }
@@ -29,8 +29,8 @@ const App = React.createClass({
   render () {
     return (
       <div className={style.component}>
-        <Clock timezone='Australia/Sydney' />
-        <Clock timezone='America/New_York' />
+        <Clock timezone='Australia/Sydney' label='Sydney' />
+        <Clock timezone='America/New_York' label='New York' />
       </div>
     )
   }
